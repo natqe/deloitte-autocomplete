@@ -1,0 +1,77 @@
+section {
+
+  display: flex;
+
+  > input {
+    border: none;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    min-width: 24rem;
+    margin-right: .5rem;
+    margin-left: 1.5rem;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  > button {
+    background-size: 100%;
+    background-color: #2fadad;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    width: 1.7rem;
+    height: 1.7rem;
+
+    // border-radius: 50%;
+
+    > div#search_box {
+      position: relative;
+      margin: 0 auto;
+      transform: rotate(36deg);
+
+      & * {
+        box-sizing: content-box;
+      }
+
+      > div#search {
+        width: 10px;
+        height: 10px;
+        border: 3px solid #f5f5f5;
+        border-radius: 10px;
+        float: left;
+      }
+
+      > span#cabe {
+        width: 8px;
+        display: block;
+        border: 2px solid #fff;
+        color: #f6f6f6;
+        font-weight: bold;
+        text-shadow: 2px 0 #fff;
+        position: absolute;
+        top: 6px;
+        left: 13px;
+        font-size: 1rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  > app-employees {
+    position: absolute;
+    top: 0;
+    transform: translateY(80px) translateX(1.5rem);
+    width: 24rem;
+    z-index: -1;
+    background: #e8e8e8;
+    border-radius: 1rem;
+    // overflow: hidden;
+    padding-top: 1rem;
+  }
+
+}

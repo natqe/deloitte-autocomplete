@@ -1,0 +1,3 @@
+<section *ngIf="items?.length">
+  <app-employee *ngFor="let item of items" [imageUrl]="item.imageUrl" [workTitle]="item.workTitle"  [name]="item.name"   [bold]="dropdownMode ? filter : ''"></app-employee>
+</section>

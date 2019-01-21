@@ -1,0 +1,5 @@
+<section>
+  <input type="search" [(ngModel)]="value"  (focus)="handleFocus()" (blur)="handleBlur()" [placeholder]="placeholder">
+  <button (click)="search()"><div id="search_box"><div id="search"></div><span id="cabe"></span></div></button>
+  <app-employees *ngIf="value.length>1&&dropdown" [filter]="value" dropdownMode="true"></app-employees>
+</section>

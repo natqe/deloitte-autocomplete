@@ -1,0 +1,40 @@
+h1 {
+  margin: 1rem 2rem;
+
+  > span:nth-of-type(1) {
+    color: white;
+  }
+
+  > span:nth-of-type(2) {
+    color: greenyellow;
+    font-size: 3.5rem;
+  }
+}
+
+div.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h2 {
+    color: #2fadad;
+    letter-spacing: .2rem;
+  }
+
+  > small {
+    color: white;
+min-height: 2rem;
+  }
+
+  > app-autocomplete {}
+
+  > app-autocomplete-result {
+    transform: translateY(25vh);
+    width: 50vw;
+    z-index: -2;
+  }
+}

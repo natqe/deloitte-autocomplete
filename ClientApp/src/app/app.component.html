@@ -1,0 +1,9 @@
+<body>
+  <h1><span>Deloitte</span><span>.</span></h1>
+  <div class="container">
+      <h2>{{title}}</h2>
+      <small>{{subTitle}}</small>
+      <app-autocomplete (hit)="handleHit($event)" (isBlur)="autocompleteActive(!$event)"></app-autocomplete>
+      <app-autocomplete-result [filter]="resultText"></app-autocomplete-result>
+  </div>
+</body>
